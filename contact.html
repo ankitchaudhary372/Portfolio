@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Ankit Kumar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #141e30, #243b55);
+      color: white;
+      min-height: 100vh;
+    }
+
+    .contact-header {
+      text-align: center;
+      padding: 4rem 2rem 2rem;
+      animation: fadeDown 1s ease forwards;
+    }
+
+    .contact-header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-header p {
+      color: #ccc;
+    }
+
+    .contact-container {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+      padding: 2rem;
+    }
+
+    .contact-card {
+      background: white;
+      color: black;
+      width: 350px;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      transition: 0.4s;
+      animation: fadeUp 1s ease forwards;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    .contact-card h2 {
+      margin-bottom: 1rem;
+    }
+
+    .contact-info {
+      margin-bottom: 1rem;
+    }
+
+    .contact-info a {
+      text-decoration: none;
+      color: #243b55;
+      font-weight: 500;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    /* Form */
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .contact-form button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 25px;
+      background: #243b55;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .contact-form button:hover {
+      background: #141e30;
+      transform: scale(1.05);
+    }
+
+    .back-home {
+      text-align: center;
+      margin: 3rem 0;
+    }
+
+    .back-home a {
+      color: white;
+      text-decoration: none;
+      border: 1px solid white;
+      padding: 10px 25px;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+
+    .back-home a:hover {
+      background: white;
+      color: #243b55;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeDown {
+      from {
+        opacity: 0;
+        transform: translateY(-40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media(max-width: 768px) {
+      .contact-header h1 {
+        font-size: 2.2rem;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="contact-header">
+    <h1>Contact Me</h1>
+    <p>Let's connect and discuss opportunities</p>
+  </div>
+
+  <div class="contact-container">
+
+    <!-- Contact Info -->
+    <div class="contact-card">
+      <h2>Get In Touch</h2>
+
+      <div class="contact-info">
+        📞 <strong>Phone:</strong><br>
+        <a href="tel:8851090116">8851090116</a>
+      </div>
+
+      <div class="contact-info">
+        📧 <strong>Email:</strong><br>
+        <a href="mailto:ankitsinghzeta1@gmail.com">
+          ankitsinghzeta1@gmail.com
+        </a>
+      </div>
+
+      <div class="contact-info">
+        🔗 <strong>LinkedIn:</strong><br>
+        <a href="https://www.linkedin.com/in/ankit-kumar-125a26251/" target="_blank">
+          linkedin.com/in/ankit-kumar-125a26251
+        </a>
+      </div>
+
+      <div class="contact-info">
+        💻 <strong>GitHub:</strong><br>
+        <a href="https://github.com/ankitchaudhary372" target="_blank">
+          github.com/ankitchaudhary372
+        </a>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-card">
+      <h2>Send a Message</h2>
+
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+    </div>
+
+  </div>
+
+  <div class="back-home">
+    <a href="index.html">← Back to Home</a>
+  </div>
+
+</body>
+</html>
